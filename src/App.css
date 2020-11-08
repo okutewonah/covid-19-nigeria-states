@@ -76,6 +76,11 @@ table tr td:last-of-type {
   perspective: 1000px;
   border: 1px #E9EFF2 solid;
   border-radius: 10px;
+  transition: transform .7s ease;
+}
+
+.card:hover {
+  transform: scale(1.04);
 }
 
 .card h1 {
@@ -116,15 +121,49 @@ input[type='text'] {
   margin: 1rem auto;
 }
 
-@media (max-width: 800px) {
+/*============== MEDIA QUERIES ==================*/
+
+/* Devices under 992px (lg) */
+@media (max-width: 991.98px) {
   .card-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  header {
+    padding: 70px;
+    margin: auto;
+    width: 600px;
   }
 }
 
-@media (max-width: 500px) {
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+  
+}
+
+/* Devices under 576px (sm) */
+@media (max-width: 575.98px) {
   .card-container {
     grid-template-columns: 1fr;
-    padding: 1rem;
+    /* padding: 1rem; */
+  }
+
+  header {
+    width: 300px;
+    padding: 1.8rem;
+    /* justify-content: center; */
+  }
+
+  header img {
+    height: 50px;
+  }
+
+  header h1 {
+    font-size: 13.7px;
+  }
+
+  table {
+    width: 250px;
+    font-size: 15px;
   }
 }
