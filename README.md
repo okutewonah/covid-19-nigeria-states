@@ -4,6 +4,6 @@
 
 > A call to `https://covidnigeria.herokuapp.com/` maintained by [sink-opuba](https://github.com/sink-opuba)
 
-> [Live Preview](https://unruffled-davinci-4c3546.netlify.app/) 
+> [Live Preview](https://covid19naija.netlify.app/) 
 
 ![Summary](src/assets/images/summary.jpg)
